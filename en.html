@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website</title>
+
+	<link rel="icon" type="image/svg+xml" href="https://assets.artivain.com/fav/main/fav.svg" sizes="any">
+
+	<!-- The page supports both dark and light color schemes, and the page author prefers / default is light. -->
+	<meta name="color-scheme" content="light dark">
+
+	<!--
+		If `prefers-color-scheme` is not supported, fall back to light mode.
+		In this case, inject the `light` CSS before the others, with
+		no media filter so that it will be downloaded with highest priority.
+	-->
+	<script>
+		if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
+			document.documentElement.style.display = "none";
+			document.head.insertAdjacentHTML(
+				"beforeend",
+				"<link id=\"css\" rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\" onload=\"document.documentElement.style.display = ''\">"
+			);
+		}
+	</script>
+	<!-- Load the alternate CSS first ... in this case the Bootstrap-Dark Variant CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css" rel="stylesheet"
+		media="(prefers-color-scheme: dark)">
+	<!-- and then the primary CSS last ... in this case the (original) Bootstrap Variant CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+		media="(prefers-color-scheme: light)">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<div class="p-3 text-white bg-dark sidebar">
+	<div class="sidebar-content text-center">
+		<div class="name-section">
+			<img src="https://assets.artivain.com/fav/main/fav.svg" alt="logo" class="logo">
+			<h1>Thomas Fournier</h1>
+			<span class="text-muted">GoudronViande24</span>
+		</div>
+		<hr>
+		<ul class="nav nav-pills flex-column mb-auto">
+
+			<li class="nav-item">
+				<a href="#about" class="nav-link text-white" aria-current="page">
+					<i class="bi bi-person-fill"></i>About me
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#projects" class="nav-link text-white">
+					<i class="bi bi-code-slash"></i>Projects
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#skills" class="nav-link text-white">
+					<i class="bi bi-brush-fill"></i>Skills
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#achievements" class="nav-link text-white">
+					<i class="bi bi-list-check"></i>Achievements
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#contact" class="nav-link text-white">
+					<i class="bi bi-envelope-fill"></i>Contact
+				</a>
+			</li>
+
+		</ul>
+		<hr>
+		<div class="social-networks fs-5">
+			<a href="https://www.instagram.com/artivain/"><i class="bi bi-instagram"></i></a><a href="https://www.twitch.tv/goudronviande24"><i class="bi bi-twitch"></i></a><a href="https://discord.artivain.com"><i class="bi bi-discord"></i></a><a href="https://paypal.me/artivain"><i class="bi bi-paypal"></i></a><a href="https://github.com/GoudronViande24"><i class="bi bi-github"></i></a>
+		</div>
+	</div>
+</div>
+
+<div id="scroll-to-top">
+	<i class="bi bi-arrow-up-circle-fill"></i>
+</div>
+
+<div class="content">
+	<div class="container">
+
+		<div id="about" class="section pt-5">
+			<h2>About me</h2>
+
+			<div class="row">
+<div class="col-md-6">
+
+<ul>
+<li>🔭 I am currently working on Artivain, especially on Artibot which is one of my biggest open-source projects</li>
+<li>🌱 I am currently learning to work with Discord.js v13 and its new features (the documentation is awful)</li>
+<li>🙌 I am always open to collaborations, do not hesitate to write to me!</li>
+<li>✌️ Need help with your project? Don't hesitate to write to me, I'm trying to help others!</li>
+<li>📫 You can reach me through Discord (<code>GoudronViande24#7211</code>)</li>
+<li>📍 I live in Quebec</li>
+
+</ul>
+</div>
+
+
+
+<div class="col-md-6">
+
+<h5>GitHub Stats</h5>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GoudronViande24&amp;theme=onedark&amp;hide_title=true&amp;show_icons=true&amp;layout=compact&amp;bg_color=00000000&amp;border_color=00000000" alt="Languages">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=GoudronViande24&amp;theme=onedark&amp;date_format=M%20j%5B%2C%20Y%5D&amp;background=00000000&amp;border=00000000" alt="Streaks">
+
+<img src="https://github-readme-stats.vercel.app/api?username=GoudronViande24&amp;theme=onedark&amp;show_icons=true&amp;count_private=true&amp;hide_title=true&amp;bg_color=00000000&amp;border_color=00000000" alt="Stats">
+</div>
+
+</div>
+
+		</div>
+
+		<div id="projects" class="section pt-5">
+			<h2>Projects</h2>
+			<p>Look at these projects I'm working on!</p>
+
+			<div class="row">
+
+				
+			<div class="col-xl-4 col-sm-6">
+				<a class="text-reset text-decoration-none" href="https://artibot.artivain.com"
+					target="_blank">
+					<div class="card mb-3">
+						<div class="card-img-top" style="background-image: url('https://assets.artivain.com/fav/bots/artibot.svg');"></div>
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-github me-3"></i>Artibot
+							</h5>
+							<p class="card-text">
+								Powerful, modular and modern open-source Discord bot system.
+							</p>
+							<p class="card-text">
+								<small class="text-muted">JavaScript</small>
+							</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6">
+				<a class="text-reset text-decoration-none" href="https://github.com/GoudronViande24/firefox-newtab"
+					target="_blank">
+					<div class="card mb-3">
+						<div class="card-img-top" style="background-image: url('https://github.com/Artivain/newtab/raw/main/preview.jpg');"></div>
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-github me-3"></i>Firefox newtab
+							</h5>
+							<p class="card-text">
+								A simple new tab extension for Firefox
+							</p>
+							<p class="card-text">
+								<small class="text-muted">HTML, CSS, JS, Bootstrap</small>
+							</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6">
+				<a class="text-reset text-decoration-none" href="https://github.com/GoudronViande24/hugo-template"
+					target="_blank">
+					<div class="card mb-3">
+						<div class="card-img-top" style="background-image: url('https://opengraph.githubassets.com/1/GoudronViande24/hugo-template');"></div>
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-github me-3"></i>Hugo template
+							</h5>
+							<p class="card-text">
+								Simple template for a simple Website made with Hugo.
+							</p>
+							<p class="card-text">
+								<small class="text-muted">Hugo, HTML, CSS, Bootstrap</small>
+							</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6">
+				<a class="text-reset text-decoration-none" href="https://github.com/GoudronViande24/personal-website-template"
+					target="_blank">
+					<div class="card mb-3">
+						<div class="card-img-top" style="background-image: url('https://repository-images.githubusercontent.com/460644854/93f5522a-dd71-4048-938b-a2ba5fdba668');"></div>
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-github me-3"></i>Personal website template
+							</h5>
+							<p class="card-text">
+								A template for a simple personal website, featuring GitHub repos, skills, certificates and more.
+							</p>
+							<p class="card-text">
+								<small class="text-muted">HTML, JavaScript, CSS</small>
+							</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+
+			</div>
+		</div>
+
+		<div id="skills" class="section pt-5">
+			<h2>Skills</h2>
+			<p>What I can do:</p>
+			<div class="row">
+
+				
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-front fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>Web frontend (HTML, CSS, JS)</h5>
+			</div>
+		
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-wordpress fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>WordPress</h5>
+			</div>
+		
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-filetype-php fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>PHP</h5>
+			</div>
+		
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-filetype-js fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>JavaScript</h5>
+			</div>
+		
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-filetype-py fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>Python</h5>
+			</div>
+		
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-filetype-java fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>Java</h5>
+			</div>
+		
+			<div class="col-xl-3 col-sm-4 text-center mb-4">
+				<i class="bi bi-bar-chart fs-1"></i>
+				<div class="progress my-3">
+					<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+						aria-valuemax="100"></div>
+				</div>
+				<h5>SQL</h5>
+			</div>
+		
+
+			</div>
+		</div>
+
+		<div id="achievements" class="section pt-5">
+			<h2>Achievements</h2>
+			<p>Here are my finished studies and certificates</p>
+			<div class="row">
+
+				
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						Sololearn
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Game Development with JS course</h5>
+						<i class="bi bi-joystick"></i>
+						<p class="card-text">Small online course on HTML5 game development</p>
+						<a href="https://www.sololearn.com/Certificate/1140-15858540/pdf" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">June 21, 2022</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						Sololearn
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">CSS course</h5>
+						<i class="bi bi-braces-asterisk"></i>
+						<p class="card-text">Small online course on CSS3</p>
+						<a href="https://www.sololearn.com/Certificate/1023-15858540/pdf/" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">June 18, 2022</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						Sololearn
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Java course</h5>
+						<i class="bi bi-filetype-java"></i>
+						<p class="card-text">Small online course on Java programming</p>
+						<a href="https://www.sololearn.com/certificates/course/en/15858540/1068/landscape/pdf" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">June 18, 2022</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						Sololearn
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">JavaScript course</h5>
+						<i class="bi bi-filetype-js"></i>
+						<p class="card-text">Small online course on JavaScript programming</p>
+						<a href="https://www.sololearn.com/certificates/course/en/15858540/1024/landscape/pdf" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">February 2, 2022</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						Sololearn
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">PHP course</h5>
+						<i class="bi bi-filetype-php"></i>
+						<p class="card-text">Small online course on PHP programming</p>
+						<a href="https://www.sololearn.com/Certificate/1059-15858540/pdf/" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">November 7, 2021</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						Sololearn
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">HTML course</h5>
+						<i class="bi bi-filetype-html"></i>
+						<p class="card-text">Small online course on HTML and frontend development</p>
+						<a href="https://www.sololearn.com/Certificate/1014-15858540/pdf/" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">November 4, 2021</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						TestDome
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">JavaScript certification</h5>
+						<i class="bi bi-star-fill"></i>
+						<p class="card-text">Gold: Top 10%</p>
+						<a href="https://app.testdome.com/cert/bb7db87905c4461cad2f457fb605da00" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">November 7, 2021</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<div class="card mb-3">
+					<div class="card-header">
+						TestDome
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Node.js certification</h5>
+						<i class="bi bi-star-fill"></i>
+						<p class="card-text">Gold: Top 10%</p>
+						<a href="https://app.testdome.com/cert/d10899b3582046c1b9e532874ce1a0d1" target="_blank"
+							class="btn btn-secondary">
+							See certificate
+						</a>
+					</div>
+					<div class="card-footer text-muted">January 22, 2022</div>
+				</div>
+			</div>
+		
+
+			</div>
+		</div>
+
+		<div id="contact" class="section pt-5">
+			<h2>Contact me</h2>
+			<p>Want to get in touch?</p>
+
+			<div class="row">
+
+				
+			<div class="col-xl-4 col-sm-6 text-center">
+				<a class="text-reset text-decoration-none" href="mailto:thomas@artivain.com">
+					<div class="card mb-3 py-3">
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-envelope fs-1"></i>
+							</h5>
+							<h5 class="card-text">
+								thomas@artivain.com
+							</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<a class="text-reset text-decoration-none" href="https://discord.artivain.com">
+					<div class="card mb-3 py-3">
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-discord fs-1"></i>
+							</h5>
+							<h5 class="card-text">
+								GoudronViande24#7211
+							</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="col-xl-4 col-sm-6 text-center">
+				<a class="text-reset text-decoration-none" href="https://instagram.com/artivain">
+					<div class="card mb-3 py-3">
+						<div class="card-body">
+							<h5 class="card-title">
+								<i class="bi bi-instagram fs-1"></i>
+							</h5>
+							<h5 class="card-text">
+								@artivain
+							</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+
+			</div>
+
+		</div>
+
+		<footer class="my-3">
+			<hr>
+			<div class="footer-content d-md-flex flex-wrap justify-content-between">
+				<div class="copyright">
+					&copy; <span id="year"></span> Thomas Fournier
+				</div>
+				<div class="credit">
+					Template:
+					<a href="https://github.com/GoudronViande24/personal-website-template" target="_blank">Personal
+						Website</a> by
+					<a href="https://github.com/GoudronViande24" target="_blank">GoudronViande24</a>
+				</div>
+			</div>
+		</footer>
+
+	</div> <!-- end container -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="script.js" type="module"></script>
+</body>
+
+</html>
